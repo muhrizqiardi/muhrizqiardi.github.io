@@ -61,8 +61,8 @@ ul {
 
 .tag {
     border-radius: 3px;
-    font-size: 0.75em;
-    height: 1em;
+    font-size: 0.75rem;
+    height: 0.75rem;
     width: auto;
     padding: 0.25em 0.5em;
     color: white;
@@ -93,6 +93,7 @@ input[type="text"], input[type="number"], input[type="email"] {
 
 .btn:hover {
     transform: scale(0.92);
+    border: none;
 }
 
 .btn:active {
