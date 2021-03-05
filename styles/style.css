@@ -191,12 +191,12 @@ a {
 /* Contact */
 
 .contact {
-  min-height: 92vh;
   width: 100%;
 }
 
 .contact .container.flex {
   align-items: center;
+  max-height: 92vh;
   justify-self: center;
   flex-wrap: wrap;
 }
