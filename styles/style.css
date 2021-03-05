@@ -123,7 +123,7 @@ a {
 }
 
 .event-line .line2.last {
-  border: 3px dashed #1a1c203b;
+  border: 3px solid #1a1c203b;
   background-color: #1a1c203b;
 }
 
