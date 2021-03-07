@@ -298,9 +298,11 @@ footer ul {
     transform: translateY(0);
   }
   .nav-links li {
-    font-size: 2rem;
     margin: 2rem 0;
     padding: 0;
+  }
+  .nav-links li a {
+    font-size: 2rem;
   }
   .hero .grid {
     grid-template-columns: 1fr;
@@ -324,5 +326,8 @@ footer ul {
   .projects .grid .card:first-child {
     grid-column: 1;
     grid-row: 1;
+  }
+  .projects .grid .card:first-child .card-bg {
+    background: linear-gradient(180deg, rgba(252, 252, 252, 0.9) 0%, rgba(254, 254, 254, 0.9) 20%, rgba(255, 255, 255, 0.48146591400231964) 100%);
   }
 }
