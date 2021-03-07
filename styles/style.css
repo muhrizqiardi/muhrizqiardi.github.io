@@ -184,24 +184,31 @@ a {
 }
 
 .projects .card-bg {
-  background: rgb(252, 252, 252);
-  background: linear-gradient(180deg, rgba(252, 252, 252, 0.9) 0%, rgba(254, 254, 254, 0.9) 20%, rgba(255, 255, 255, 0.48146591400231964) 100%);
+  background: rgba(252, 252, 252);
+  background: linear-gradient(180deg, rgba(252, 252, 252, 0.9) 0%, rgba(254, 254, 254, 0.9) 40%, rgba(255, 255, 255, 0) 100%);
   display: flex;
   width: 100%;
   height: 300px;
   align-items: flex-start;
   justify-content: space-between;
   visibility: visible;
-  transition: transform 0.25s;
-}
-
-.projects .grid .card:first-child .card-bg {
-  background: linear-gradient(90deg, rgba(252, 252, 252, 0.9) 0%, rgba(254, 254, 254, 0.9) 20%, rgba(255, 255, 255, 0.48146591400231964) 100%);
+  transition: all 0.25s;
 }
 
 .projects .card:hover {
+  z-index: 98;
   background-size: auto 105%;
 }
+
+.projects .card-bg:hover {
+  z-index: 99;
+  background: linear-gradient(180deg, rgba(252, 252, 252, 0.9) 0%, rgba(254, 254, 254, 0.9) 20%, rgba(255, 255, 255, 0.48146591400231964) 100%);
+  border: none;
+}
+
+/* .projects .grid .card:first-child .card-bg:hover {
+  background: linear-gradient(90deg, rgba(252, 252, 252, 0.9) 0%, rgba(254, 254, 254, 0.9) 20%, rgba(255, 255, 255, 0.48146591400231964) 100%);
+} */
 
 .card-1 {
   background-image: url("/img/projects-thumbnail/creative-at-home.png");
