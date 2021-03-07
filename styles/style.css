@@ -269,6 +269,9 @@ footer ul {
     padding: 10px;
     min-height: 40px;
   }
+  .burger-desc {
+    font-size: 0;
+  }
   .navbar .burger {
     display: block;
     z-index: 100;
