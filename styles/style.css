@@ -4,7 +4,7 @@
   --light-color: #fcfcfc;
   --dark-color: #1a1c20;
   --error-color: #F51500;
-  --success-color: #1A58D5;
+  --success-color: #5A95ED;
 }
 
 * {
@@ -30,6 +30,7 @@ a {
 
 .navbar {
   /* background-color: black; */
+  text-transform: uppercase;
   min-height: 8vh;
   padding: 0 100px;
   position: sticky;
@@ -66,7 +67,7 @@ a {
 .nav-links a {
   color: black;
   /* text-transform: uppercase; */
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .nav-links a:hover {
