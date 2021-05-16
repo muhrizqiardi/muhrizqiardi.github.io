@@ -14,15 +14,15 @@
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 input, button {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -93,7 +93,7 @@ a {
   width: 250px;
   border-radius: 125px;
   background-image: url("/img/me.jpg");
-  background-size: 100% auto ;
+  background-size: 100% auto;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.281);
   justify-self: left;
 }
@@ -194,15 +194,27 @@ a {
   overflow: hidden;
   background-position: center;
   background-size: auto 100%;
+  background-repeat: no-repeat;
   transition: all 0.25s;
 }
 
-.projects .grid .card:first-child {
+.projects .card:first-child {
   grid-column: 1 / span 2;
+  background-size: 100% auto;
+}
+
+.projects .card:nth-child(4) {
+  grid-column: 2 / span 2;
+  background-size: 100% auto;
+}
+
+.projects .card:nth-child(5) {
+  grid-column: 1 / span 2;
+  background-size: 100% auto;
 }
 
 .projects .card-bg {
-  background: rgba(252, 252, 252);
+  /* background: rgba(252, 252, 252, 0.863); */
   background: linear-gradient(180deg, rgba(252, 252, 252, 0.9) 0%, rgba(254, 254, 254, 0.9) 40%, rgba(255, 255, 255, 0) 100%);
   display: flex;
   width: 100%;
@@ -215,7 +227,6 @@ a {
 
 .projects .card:hover {
   z-index: 98;
-  background-size: auto 105%;
 }
 
 .projects .card-bg:hover {
@@ -227,18 +238,6 @@ a {
 /* .projects .grid .card:first-child .card-bg:hover {
   background: linear-gradient(90deg, rgba(252, 252, 252, 0.9) 0%, rgba(254, 254, 254, 0.9) 20%, rgba(255, 255, 255, 0.48146591400231964) 100%);
 } */
-
-.card-1 {
-  background-image: url("/img/projects-thumbnail/creative-at-home.png");
-}
-
-.card-2 {
-  background-image: url("/img/projects-thumbnail/SNAPs.png");
-}
-
-.card-3 {
-  background-image: url("/img/projects-thumbnail/muhrizqiardi.github.io.png");
-}
 
 /* Contact */
 
