@@ -21,6 +21,10 @@ h1 {
   font-family: 'Inter', sans-serif;
 }
 
+p {
+  font-family: 'Inter', sans-serif;
+}
+
 input, button {
   font-family: 'Inter', sans-serif;
 }
@@ -193,24 +197,21 @@ a {
   width: 100%;
   overflow: hidden;
   background-position: center;
-  background-size: auto 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   transition: all 0.25s;
 }
 
 .projects .card:first-child {
   grid-column: 1 / span 2;
-  background-size: 100% auto;
 }
 
 .projects .card:nth-child(4) {
   grid-column: 2 / span 2;
-  background-size: 100% auto;
 }
 
 .projects .card:nth-child(5) {
   grid-column: 1 / span 2;
-  background-size: 100% auto;
 }
 
 .projects .card-bg {
@@ -348,6 +349,7 @@ footer ul {
   }
   .hero-text h1 {
     font-size: 24px !important;
+    font-weight: 300;
     margin: 1.5rem 0;
   }
   .history .card.grid {
@@ -357,6 +359,15 @@ footer ul {
   .projects .grid .card:first-child {
     grid-column: 1;
     grid-row: 1;
+  }
+  .projects .card:first-child {
+    grid-column:1;
+  }
+  .projects .card:nth-child(4) {
+    grid-column:1
+  }
+  .projects .card:nth-child(5) {
+    grid-column:1;
   }
   .projects .grid .card:first-child .card-bg {
     background: linear-gradient(180deg, rgba(252, 252, 252, 0.9) 0%, rgba(254, 254, 254, 0.9) 20%, rgba(255, 255, 255, 0.48146591400231964) 100%);
