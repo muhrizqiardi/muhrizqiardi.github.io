@@ -291,6 +291,25 @@ footer ul {
   flex-direction: column;
 }
 
+@keyframes anim {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.anim-1, .anim-2 {
+  animation: 0.5s anim cubic-bezier(.03, .21, 0, .97);
+}
+
+.anim-2 {
+  animation: 0.5s anim cubic-bezier(.03, .21, 0, .97);
+}
+
 /* Media queries for responsive website */
 
 @media (max-width: 1024px) {
@@ -361,13 +380,13 @@ footer ul {
     grid-row: 1;
   }
   .projects .card:first-child {
-    grid-column:1;
+    grid-column: 1;
   }
   .projects .card:nth-child(4) {
-    grid-column:1
+    grid-column: 1
   }
   .projects .card:nth-child(5) {
-    grid-column:1;
+    grid-column: 1;
   }
   .projects .grid .card:first-child .card-bg {
     background: linear-gradient(180deg, rgba(252, 252, 252, 0.9) 0%, rgba(254, 254, 254, 0.9) 20%, rgba(255, 255, 255, 0.48146591400231964) 100%);
