@@ -291,7 +291,7 @@ footer ul {
   flex-direction: column;
 }
 
-@keyframes anim {
+@keyframes rise-up {
   from {
     transform: translateY(100%);
     opacity: 0;
@@ -302,12 +302,23 @@ footer ul {
   }
 }
 
-.anim-1, .anim-2 {
-  animation: 0.5s anim cubic-bezier(.03, .21, 0, .97);
+@keyframes slide-down {
+  from {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
-.anim-2 {
-  animation: 0.5s anim cubic-bezier(.03, .21, 0, .97);
+.anim-1, .anim-2 {
+  animation: 0.5s rise-up cubic-bezier(.03, .21, 0, .97);
+}
+
+.navbar {
+  animation: 0.5s slide-down cubic-bezier(.03, .21, 0, .97);
 }
 
 /* Media queries for responsive website */
