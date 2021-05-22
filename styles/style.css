@@ -313,12 +313,27 @@ footer ul {
   }
 }
 
+@keyframes scale-up {
+  from {
+    transform: scale(0%);
+    opacity: 0;
+  }
+  to {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+
 .anim-1, .anim-2 {
   animation: 0.5s rise-up cubic-bezier(.03, .21, 0, .97);
 }
 
 .navbar {
   animation: 0.5s slide-down cubic-bezier(.03, .21, 0, .97);
+}
+
+.hero-img {
+  animation: 0.5s scale-up cubic-bezier(.03, .21, 0, .97);
 }
 
 /* Media queries for responsive website */
