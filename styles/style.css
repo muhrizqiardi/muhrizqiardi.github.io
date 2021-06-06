@@ -1,10 +1,10 @@
 :root {
   --primary-color: #f9813a;
-  --secondary-color: #3B1E0D;
+  --secondary-color: #3b1e0d;
   --light-color: #fcfcfc;
   --dark-color: #1a1c20;
-  --error-color: #F51500;
-  --success-color: #5A95ED;
+  --error-color: #f51500;
+  --success-color: #5a95ed;
 }
 
 * {
@@ -14,19 +14,20 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-input, button {
-  font-family: 'Inter', sans-serif;
+input,
+button {
+  font-family: "Inter", sans-serif;
 }
 
 a {
@@ -117,6 +118,20 @@ a {
   opacity: 100%;
 }
 
+/* Partnership Section */
+section.partnership {
+  height: 300px;
+}
+
+section.partnership .container {
+  height: 100%;
+  padding: 32px;
+}
+
+section.partnership .container .card {
+  height: 100%;
+}
+
 /* History of my life */
 
 .history {
@@ -130,7 +145,8 @@ a {
   gap: 0;
 }
 
-.event, .event-line {
+.event,
+.event-line {
   height: 150px;
   width: 100%;
   overflow: hidden;
@@ -216,7 +232,12 @@ a {
 
 .projects .card-bg {
   /* background: rgba(252, 252, 252, 0.863); */
-  background: linear-gradient(180deg, rgba(252, 252, 252, 0.9) 0%, rgba(254, 254, 254, 0.9) 40%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(252, 252, 252, 0.9) 0%,
+    rgba(254, 254, 254, 0.9) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
   display: flex;
   width: 100%;
   height: 300px;
@@ -232,7 +253,12 @@ a {
 
 .projects .card-bg:hover {
   z-index: 99;
-  background: linear-gradient(180deg, rgba(252, 252, 252, 0.9) 0%, rgba(254, 254, 254, 0.9) 20%, rgba(255, 255, 255, 0.48146591400231964) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(252, 252, 252, 0.9) 0%,
+    rgba(254, 254, 254, 0.9) 20%,
+    rgba(255, 255, 255, 0.48146591400231964) 100%
+  );
   border: none;
 }
 
@@ -324,16 +350,17 @@ footer ul {
   }
 }
 
-.anim-1, .anim-2 {
-  animation: 0.5s rise-up cubic-bezier(.03, .21, 0, .97);
+.anim-1,
+.anim-2 {
+  animation: 0.5s rise-up cubic-bezier(0.03, 0.21, 0, 0.97);
 }
 
 .navbar {
-  animation: 0.5s slide-down cubic-bezier(.03, .21, 0, .97);
+  animation: 0.5s slide-down cubic-bezier(0.03, 0.21, 0, 0.97);
 }
 
 .hero-img {
-  animation: 0.5s scale-up cubic-bezier(.03, .21, 0, .97);
+  animation: 0.5s scale-up cubic-bezier(0.03, 0.21, 0, 0.97);
 }
 
 /* Media queries for responsive website */
@@ -385,7 +412,7 @@ footer ul {
     grid-template-columns: 1fr;
   }
   .hero {
-    padding: 10px
+    padding: 10px;
   }
   .hero-img {
     justify-self: center;
@@ -409,12 +436,17 @@ footer ul {
     grid-column: 1;
   }
   .projects .card:nth-child(4) {
-    grid-column: 1
+    grid-column: 1;
   }
   .projects .card:nth-child(5) {
     grid-column: 1;
   }
   .projects .grid .card:first-child .card-bg {
-    background: linear-gradient(180deg, rgba(252, 252, 252, 0.9) 0%, rgba(254, 254, 254, 0.9) 20%, rgba(255, 255, 255, 0.48146591400231964) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(252, 252, 252, 0.9) 0%,
+      rgba(254, 254, 254, 0.9) 20%,
+      rgba(255, 255, 255, 0.48146591400231964) 100%
+    );
   }
 }
